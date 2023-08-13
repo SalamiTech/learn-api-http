@@ -1,1 +1,9 @@
-<p>home works!</p>
+<h1>Fetching data from backend</h1>
+
+{{ myData | json }}
+
+<ul>
+    <li *ngForm="let item of myData$ | async">
+        {{ item.id }}
+    </li>
+</ul>
